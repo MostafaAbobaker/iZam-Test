@@ -1,0 +1,95 @@
+.sidebar-heading {
+    position: fixed;
+    top: 105px;
+    height: calc(100svh - 105px);
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    padding: 20px;
+    display: none;
+    @media (min-width:1200px) {
+        width: 340px;
+        display: block;
+    }
+    @media (min-width:1400px) {
+        width: 440px;
+        display: block;
+    }
+    .head-sidebar {
+        border-bottom: 1px solid #DDDDDD;
+        padding-block: 10px;
+        margin-bottom: 10px;
+        h5 {
+            font-size: 25px;
+            font-weight: 500;
+        }
+        .icon-action {
+            display: flex;
+            gap: 10px;
+            .edit-action {
+                display: none;
+                gap: 10px;
+            }
+            i {
+                font-size: 25px;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    animation-name: fa-shake;
+                    animation:   0.3s 1 linear;
+                }
+            }
+        }
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        li {
+            a {
+                display: block;
+                text-decoration: none;
+                background-color: #F7F7F7;
+                color: #404040;
+                padding: rem(20);
+                font-size: rem(24);
+                font-weight: 500;
+                position: relative;
+                
+                &[data-bs-toggle="collapse"]  {
+                    &::after {
+                        content: "\f077";
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        position: absolute;
+                        right: 15px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        transition: all 0.3s ease-in-out;
+                        
+                    }
+                }
+                &.collapsed {
+                    
+                    &::after {
+                        content: "\f078";
+                       /*  transform: scale(-1); */
+                    }
+                }
+            }
+            ul  {
+                padding-inline-start: 20px;
+                padding-top: 10px;
+                li {
+                    a {
+                        background-color: transparent;
+                        font-size: rem(22);
+                        padding: rem(10);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.text-main {
+  color: $main-color !important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: var(--bs-dropdown-link-active-color);
+    text-decoration: none;
+    background-color: $main-color;
+}
+/* Scroll */
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+::-webkit-scrollbar-track {
+	background-color: #cdf7cf;
+}
+::-webkit-scrollbar-thumb {
+	background-color: $main-color ;
+	border-radius: 5px;
+	border: 0 solid #cdf7cf;
+	background-clip: content-box;
+	&:hover{
+		background-color: #48A74C;
+	}
+} 

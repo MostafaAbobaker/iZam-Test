@@ -1,0 +1,148 @@
+header.header {
+  padding-block: rem(9) ;
+  position: fixed;
+  top: 0;
+  inset-inline: 0;
+  .content-nav {}
+
+  .icon-sidebar {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+
+    &::after {
+      content: "\f0c9";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      inset-block-end: 0;
+      inset-inline-end: 0;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #F0F0F0;
+      border-radius: 50%;
+      color: #707070;
+      font-size: rem(12);
+      display: grid;
+      place-items: center;
+    }
+
+    @media (min-width:768px) {
+      display: none;
+    }
+
+  }
+
+  .navbar-brand {
+    font-weight: 700;
+    font-size: rem(35);
+
+  }
+
+  .form-search {
+    width: 450px;
+    position: relative;
+    display: none;
+
+    @media (min-width:992px) {
+      width: 150px;
+      display: block;
+
+    }
+
+    @media (min-width:1200px) {
+      width: 250px;
+      display: block;
+    }
+
+    @media (min-width:1400px) {
+      width: 450px;
+      display: block;
+    }
+
+    input.form-control {
+      /* width: 100%; */
+      padding-block: rem(18);
+      padding-inline-start: 70px;
+    }
+
+    &::before {
+      content: '\f002';
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      /* content: "\f007"; */
+      position: absolute;
+      width: 47px;
+      height: 47px;
+      background-color: $main-color;
+      color: #fff;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      top: 50%;
+      transform: translateY(-50%);
+      inset-inline-start: 10px;
+    }
+  }
+
+  ul.nav {
+    display: none;
+
+    @media (min-width:768px) {
+      display: flex;
+    }
+
+    &>li.nav-item {
+      a {
+        font-weight: 400;
+        font-size: rem(14);
+        padding: rem(8);
+
+        @media (min-width:992px) {
+          font-size: rem(18);
+          padding: rem(16);
+        }
+      }
+
+      
+    }
+    .dropdown-menu {
+      a.dropdown-item {
+        font-weight: 500;
+        font-size: rem(16);
+      }
+      li.user-profile {
+        a.dropdown-item {
+
+          &:active {
+            background-color: transparent;
+          }
+        }
+        .text-dark {
+          padding-inline-end: 20px;
+          position: relative;
+          h6 {
+            font-size: rem(16);
+            font-weight: 500;
+          }
+          small {
+            font-weight: 400;
+            font-size: rem(15);
+          }
+          &::after {
+            content: "\f105";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            inset-inline-end: 0;
+            color: #707070;
+            font-size: rem(12);
+          }
+        }
+      }
+    }
+  }
+}

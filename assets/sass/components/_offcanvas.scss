@@ -1,0 +1,81 @@
+.offcanvas {
+  .user-profile {
+    border-bottom: 1px solid #DDDDDD;
+    padding-block: 20px;
+    padding-bottom: 30px;
+    .text-dark {
+      padding-inline-end: 20px;
+      position: relative;
+      width: 100%;
+      h6 {
+        font-size: rem(16);
+        font-weight: 500;
+      }
+
+      small {
+        font-weight: 400;
+        font-size: rem(15);
+      }
+
+      &::after {
+        content: "\f105";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        inset-inline-end: 10px;
+        color: #707070;
+        font-size: rem(12);
+      }
+    }
+  }
+  .list-group {
+    list-style-type: none;
+    padding-top: 20px;
+    .list-group-item {
+      border: none;
+      padding: 0;
+      hr {
+        border-bottom: 1px solid #DDDDDD;
+        padding-bottom: 15px;
+      }
+      a  {
+        text-decoration: none;
+        color: #5B5B5B;
+        font-weight: 500;
+        font-size: 14px;
+        display: block;
+        padding-inline: 16px;
+        padding-block: 15px;
+        .badges {
+          width: 20px;
+          height: 20px;
+          display: grid;
+          place-items: center;
+          top: -7px;
+          inset-inline-end: -7px;
+        }
+        i {
+          color: #7D7D7D;
+          font-size: 24px;
+          margin-inline-end: rem(10);
+        }
+        &.active {
+          background-color: $main-color;
+          color: #fff;
+          i {
+            color: #fff;
+          }
+        }
+        &.title {
+          font-size: 16px;
+          padding-block: 10px;
+        }
+        &.text-danger {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}

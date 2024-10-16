@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "address": "123 Main St, Springfield",
+      "date": "2023-10-01",
+      "description": "Software Engineer position at TechCorp. Looking for a candidate with experience in Java and Python.",
+      "favorite": "true",
+      "image": "1.png",
+      "jobName": "Software Engineer",
+      "nameCompany": "TechCorp",
+      "tags": ["Java"," Python", "Software Development"]
+    },
+    {
+      "address": "456 Elm St, Springfield",
+      "date": "2023-10-05",
+      "description": "Marketing Manager role at MarketPro. Seeking a creative individual with a strong background in digital marketing.",
+      "favorite": "false",
+      "image": "2.png",
+      "jobName": "Marketing Manager",
+      "nameCompany": "MarketPro",
+      "tags": ["Digital Marketing", "SEO", "Social Media"]
+    },
+    {
+      "address": "789 Oak St, Springfield",
+      "date": "2023-10-10",
+      "description": "Sales Associate position at RetailWorld. Looking for a motivated individual with excellent communication skills.",
+      "favorite": "true",
+      "image": "3.png",
+      "jobName": "Sales Associate",
+      "nameCompany": "RetailWorld",
+      "tags": ["Sales", "Customer Service", "Retail"]
+    },
+    {
+      "address": "321 Pine St, Springfield",
+      "date": "2023-10-15",
+      "description": "Graphic Designer role at DesignStudio. Seeking a creative individual with experience in Adobe Creative Suite.",
+      "favorite": "false",
+      "image": "1.png",
+      "jobName": "Graphic Designer",
+      "nameCompany": "DesignStudio",
+      "tags": ["Graphic Design", "Adobe", "Creativity"]
+    },
+    {
+      "address": "654 Cedar St, Springfield",
+      "date": "2023-10-20",
+      "description": "Project Manager position at BuildIt. Looking for a candidate with strong leadership skills and construction experience.",
+      "favorite": "true",
+      "image": "2.png",
+      "jobName": "Project Manager",
+      "nameCompany": "BuildIt",
+      "tags": ["Project Management", "Construction", "Leadership"]
+    },
+    {
+      "address": "987 Birch St, Springfield",
+      "date": "2023-10-25",
+      "description": "Data Analyst role at DataWise. Seeking a detail-oriented individual with experience in data analysis and visualization.",
+      "favorite": "false",
+      "image": "3.png",
+      "jobName": "Data Analyst",
+      "nameCompany": "DataWise",
+      "tags": ["Data Analysis", "Visualization", "Excel"]
+    },
+    {
+      "address": "135 Maple St, Springfield",
+      "date": "2023-10-30",
+      "description": "Registered Nurse position at HealthCare Inc. Looking for a compassionate individual with a valid nursing license.",
+      "favorite": "true",
+      "image": "1.png",
+      "jobName": "Registered Nurse",
+      "nameCompany": "HealthCare Inc",
+      "tags": ["Nursing", "Healthcare", "Compassion"]
+    },
+    {
+      "address": "246 Walnut St, Springfield",
+      "date": "2023-11-05",
+      "description": "Web Developer role at CodeFactory. Seeking a tech-savvy individual with experience in HTML, CSS, and JavaScript.",
+      "favorite": "false",
+      "image": "2.png",
+      "jobName": "Web Developer",
+      "nameCompany": "CodeFactory",
+      "tags": ["Web Development", "HTML", "CSS"]
+    },
+    {
+      "address": "357 Cherry St, Springfield",
+      "date": "2023-11-10",
+      "description": "Human Resources Manager position at PeopleFirst. Looking for a candidate with strong interpersonal skills and HR experience.",
+      "favorite": "true",
+      "image": "3.png",
+      "jobName": "Human Resources Manager",
+      "nameCompany": "PeopleFirst",
+      "tags": ["HR", "Interpersonal Skills", "Management"]
+    },
+    {
+      "address": "468 Spruce St, Springfield",
+      "date": "2023-11-15",
+      "description": "Chef role at GourmetEats. Seeking a creative individual with a passion for cooking and culinary experience.",
+      "favorite": "false",
+      "image": "1.png",
+      "jobName": "Chef",
+      "nameCompany": "GourmetEats",
+      "tags": ["Cooking", "Culinary", "Creativity"]
+    }
+  ]
+}
