@@ -230,7 +230,7 @@
 
     <main id="sidebarWrapper" class="wrapper-page">
       <!-- Start side Bar -->
-      <aside class="sidebar-heading" id="sidebarHeading">
+      <aside class="sidebar-heading " id="sidebarHeading">
         <div
           class="head-sidebar d-flex align-items-center justify-content-between"
         >
@@ -253,6 +253,11 @@
           <li class="sidebar-nav-item">
             <a class="sidebar-nav-link" href="#">
               <span class="item-name">Dashboard</span>
+
+              <div class="btn-group">
+                <span class="edit"><i class="fa-solid fa-pencil"></i></span>
+                <span class="hide"><i class="fa-solid fa-eye-slash"></i></span>
+              </div>
             </a>
           </li>
           <li class="sidebar-nav-item">
@@ -263,17 +268,30 @@
             >
               <i class="fi fi-rr-house-chimney"></i>
               <span class="item-name">Application</span>
-              <span class="menu-arrow fi fi-rr-angle-small-down"></span>
+
+              <div class="btn-group">
+                <span class="edit"><i class="fa-solid fa-pencil"></i></span>
+                <span class="hide"><i class="fa-solid fa-eye-slash"></i></span>
+              </div>
             </a>
             <ul
               id="sub-1"
               class="collapse sub-menu"
               data-bs-parent="#nav_accordion"
             >
-              <li><a class="sidebar-nav-link" href="#">John Doe</a></li>
-              <li><a class="sidebar-nav-link" href="#">James Bond</a></li>
+              <li><a class="sidebar-nav-link" href="#">John Doe     <div class="btn-group">
+                <span class="edit"><i class="fa-solid fa-pencil"></i></span>
+                <span class="hide"><i class="fa-solid fa-eye-slash"></i></span>
+              </div></a></li>
+              <li><a class="sidebar-nav-link" href="#">James Bond  <div class="btn-group">
+                <span class="edit"><i class="fa-solid fa-pencil"></i></span>
+                <span class="hide"><i class="fa-solid fa-eye-slash"></i></span>
+              </div></a></li>
               <li>
-                <a class="sidebar-nav-link" href="#">Scarlett Johansson</a>
+                <a class="sidebar-nav-link" href="#">Scarlett Johansson  <div class="btn-group">
+                <span class="edit"><i class="fa-solid fa-pencil"></i></span>
+                <span class="hide"><i class="fa-solid fa-eye-slash"></i></span>
+              </div></a>
               </li>
             </ul>
           </li>
@@ -281,27 +299,55 @@
             <a class="sidebar-nav-link" data-bs-toggle="collapse" href="#sub-2">
               <i class="fi fi-rr-dashboard"></i>
               <span class="item-name">Qualifications</span>
-              <span class="menu-arrow fi fi-rr-angle-small-down"></span>
+              <div class="btn-group">
+                <span class="edit"><i class="fa-solid fa-pencil"></i></span>
+                <span class="hide"><i class="fa-solid fa-eye-slash"></i></span>
+              </div>
             </a>
             <ul
               id="sub-2"
               class="collapse sub-menu"
               data-bs-parent="#nav_accordion"
             >
-              <li><a class="sidebar-nav-link" href="#">Overview</a></li>
-              <li><a class="sidebar-nav-link" href="#">Weekly</a></li>
-              <li><a class="sidebar-nav-link" href="#">Monthly</a></li>
-              <li><a class="sidebar-nav-link" href="#">Annually</a></li>
+              <li><a class="sidebar-nav-link" href="#">Overview  
+                <div class="btn-group">
+                  <span class="edit"><i class="fa-solid fa-pencil"></i></span>
+                  <span class="hide"><i class="fa-solid fa-eye-slash"></i></span>
+                </div>
+                </a></li>
+              <li><a class="sidebar-nav-link" href="#">Weekly              
+                <div class="btn-group">
+                  <span class="edit"><i class="fa-solid fa-pencil"></i></span>
+                  <span class="hide"><i class="fa-solid fa-eye-slash"></i></span>
+                </div></a></li>
+              <li><a class="sidebar-nav-link" href="#">Monthly                 
+                <div class="btn-group">
+                  <span class="edit"><i class="fa-solid fa-pencil"></i></span>
+                  <span class="hide"><i class="fa-solid fa-eye-slash"></i></span>
+                </div>
+              </a></li>
+              <li><a class="sidebar-nav-link" href="#">Annually               <div class="btn-group">
+                <span class="edit"><i class="fa-solid fa-pencil"></i></span>
+                <span class="hide"><i class="fa-solid fa-eye-slash"></i></span>
+              </div></a></li>
             </ul>
           </li>
           <li class="sidebar-nav-item">
             <a class="sidebar-nav-link" href="#">
-              <span class="item-name">About</span>
+              <span class="item-name">About  </span>
+              <div class="btn-group">
+                <span class="edit"><i class="fa-solid fa-pencil"></i></span>
+                <span class="hide"><i class="fa-solid fa-eye-slash"></i></span>
+              </div>
             </a>
           </li>
           <li class="sidebar-nav-item">
             <a class="sidebar-nav-link" href="#">
-              <span class="item-name">Contact</span>
+              <span class="item-name">Contact  </span>
+              <div class="btn-group">
+                <span class="edit"><i class="fa-solid fa-pencil"></i></span>
+                <span class="hide"><i class="fa-solid fa-eye-slash"></i></span>
+              </div>
             </a>
           </li>
         </ul>
@@ -316,7 +362,7 @@
               <label for="staticEmail" class="col-form-label text-nowrap me-2"
                 >Sorting by :
               </label>
-              <button
+              <!-- <button
                 class="btn dropdown-toggle"
                 type="button"
                 data-bs-toggle="dropdown"
@@ -328,14 +374,14 @@
                 <li><a class="dropdown-item">Top match</a></li>
                 <li><a class="dropdown-item">Newest</a></li>
                 <li><a class="dropdown-item">Latest</a></li>
-              </ul>
-              <!--  <div class="">
+              </ul> -->
+               <div class="">
               <select class="form-select" aria-label="Default select example">
                 <option selected>Top match</option>
                 <option >Newest</option>
                 <option >Latest</option>
               </select>
-            </div> -->
+            </div>
             </div>
           </div>
           <!-- End Sorting -->

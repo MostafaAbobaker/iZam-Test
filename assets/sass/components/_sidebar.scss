@@ -12,8 +12,8 @@
     @media (min-width:1200px) {
         max-width: 340px;
         inset-inline-start: 0;
-        top: 105px;
-        height: calc(100svh - 105px);
+        top: 106px;
+        height: calc(100svh - 106px);
     }
     @media (min-width:1400px) {
         max-width: 440px;
@@ -52,7 +52,12 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+        max-height: 70svh;
+        overflow-y: auto;
         li {
+            &.disabled-nav-item {
+                display: none;
+            }
             a {
                 display: block;
                 text-decoration: none;
@@ -62,7 +67,9 @@
                 font-size: rem(24);
                 font-weight: 500;
                 position: relative;
-                
+                .btn-group {
+                    display: none;
+                }
                 &[data-bs-toggle="collapse"]  {
                     &::after {
                         content: "\f077";
@@ -101,5 +108,61 @@
     &.show {
         inset-inline-start: 0;
         display: block;
+    }
+    &.edit-sidebar {
+        ul {
+            li {
+                &.disabled-nav-item {
+                    display: block;
+                    a {
+                        color: #CDCDCD;
+                        opacity: .7;
+                    }
+                }
+                a {
+                    position: relative;
+                    display: flex;
+                    &::after {
+                        display: none;
+                    }
+                    .btn-group {
+                        display: flex;
+                        gap: 5px;
+                        margin-inline-start: auto;
+                        color: #848484;
+                        position: relative;
+                        z-index: 3;
+                        span {
+                            transition: all 0.3s ease-in-out;
+                            cursor: pointer;
+                            i {
+                                font-size: rem(16);
+                            }
+                            &:hover {
+                                color: #404040;
+                            }
+                        }
+                    } 
+                    &::before {
+                        content: '\f142';
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        inset-inline-start: 5px;
+                        position: absolute;
+                        
+                    }
+                }
+                ul {
+                    li {
+                        a {
+                            &::before {
+                                
+                                inset-inline-start: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

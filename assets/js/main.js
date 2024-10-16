@@ -3,17 +3,27 @@ $(document).ready(function(){
       $(this).addClass('d-none');
       $('#editAction').addClass('d-flex');
       $('#editAction').removeClass('d-none');
+      $(this).closest('#sidebarHeading').addClass('edit-sidebar');
+
     });
     $("#cancelAction").click(function(){
       $('#settingAction').removeClass('d-none');
       $('#editAction').addClass('d-none');
+      $(this).closest('#sidebarHeading').removeClass('edit-sidebar');
+
     });
     $("#confirmAction").click(function(){
       $('#settingAction').removeClass('d-none');
       $('#editAction').addClass('d-none');
+      $(this).closest('#sidebarHeading').removeClass('edit-sidebar');
+
+
     });
     $("#iconToggleSide").click(function(){
       $('#sidebarHeading').toggleClass('show');
+    });
+    $(".btn-group .hide").click(function(){
+      $(this).closest('.sidebar-nav-item').toggleClass('disabled-nav-item');
     });
 
     

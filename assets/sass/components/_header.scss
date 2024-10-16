@@ -3,6 +3,7 @@ header.header {
   position: fixed;
   top: 0;
   inset-inline: 0;
+  z-index: 999;
   .content-nav {}
 
   .icon-sidebar {
