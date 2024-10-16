@@ -12,8 +12,11 @@ $(document).ready(function(){
       $('#settingAction').removeClass('d-none');
       $('#editAction').addClass('d-none');
     });
+    $("#iconToggleSide").click(function(){
+      $('#sidebarHeading').toggleClass('show');
+    });
 
-   
+    
     
   });
 
@@ -45,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <p>${user.nameCompany} </p>
                             </div>
                         </div>
-                        <div id="favoriteIcon" class="${user.favorite? 'favorite-icon active': 'favorite-icon'}" onclick="addFavorites(this, 'active')">
+                        <div id="favoriteIcon" class="${user.favorite? 'favorite-icon ': 'favorite-icon'}" onclick="addFavorites(this, 'active')">
                             <i class="fa-solid fa-heart"></i>
                         </div>
                         </div>

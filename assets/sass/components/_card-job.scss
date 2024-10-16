@@ -73,6 +73,7 @@
         font-size: rem(17);
         color: #707070;
         display: flex;
+        flex-wrap: wrap;
         gap: 20px;
         i {
             margin-inline-end: 5px;
