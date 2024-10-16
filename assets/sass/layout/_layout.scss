@@ -13,7 +13,15 @@
             padding-inline-start: 440px;
         }
         .sorting-component {
-
+            .form-select {
+                background-color: transparent;
+                border: none;
+                color: $main-color;
+                font-weight: 500;
+                &:focus {
+                    box-shadow: none;
+                }
+            }
         }
         .view-mobile-side {
             display: flex;

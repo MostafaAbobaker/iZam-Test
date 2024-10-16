@@ -1,9 +1,9 @@
-/* Error: 2 arguments required, but only 1 was passed.
+/* Error: Undefined variable.
  *    ,
- * 25 |             width: rem(70);
- *    |                    ^^^^^^^
+ * 19 |                 color: $main-color;
+ *    |                        ^^^^^^^^^^^
  *    '
- *   assets\sass\layout\_layout.scss 25:20  @import
+ *   assets\sass\layout\_layout.scss 19:24  @import
  *   assets\sass\layout\index.scss 1:9      root stylesheet */
 
 body::before {
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: 2 arguments required, but only 1 was passed.\a    \2577 \a 25 \2502              width: rem(70);\d\a    \2502                     ^^^^^^^\a    \2575 \a   assets\\sass\\layout\\_layout.scss 25:20  @import\a   assets\\sass\\layout\\index.scss 1:9      root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 19 \2502                  color: $main-color;\d\a    \2502                         ^^^^^^^^^^^\a    \2575 \a   assets\\sass\\layout\\_layout.scss 19:24  @import\a   assets\\sass\\layout\\index.scss 1:9      root stylesheet";
 }
